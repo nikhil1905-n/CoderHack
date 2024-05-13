@@ -1,6 +1,5 @@
 package com.nikhiln.coderHack.dto;
 
-import javax.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,9 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDto {
+public class UserIdDto {
 
-    @NotBlank
-    private String username;
-  
+    private String userId;
+    
 }
