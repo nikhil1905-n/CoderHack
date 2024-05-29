@@ -12,6 +12,14 @@ CoderHack is a RESTful API service built using Spring Boot to manage the leaderb
 - Retrieve sorted leaderboard
 - Error handling and validation
 
+## Architecture
+
+The backend is implemented using a layered architecture with the following components:
+
+* **Controller:** Handles incoming requests and delegates them to the service layer.
+* **Service:** Handles business logic and interacts with the repository layer.
+* **Repository:** Provides access to the database (MongoDB in this case).
+
 ## Endpoints
 
 - `GET /users` - Retrieves a list of all registered users.
@@ -66,7 +74,7 @@ CoderHack is a RESTful API service built using Spring Boot to manage the leaderb
 ## Setup and Usage
 
 1. Clone the repository `git clone https://github.com/nikhil1905-n/CoderHack.git`.
-2. Configure MySQL database settings in `application.properties`.
+2. Configure MongoDB database settings in `application.properties`.
 3. Run the application using `./gradlew bootrun`.
 4. Use endpoints to perform CRUD operations on user.
 
